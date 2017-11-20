@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik:400,700,900');
 
 /* ----FONTS----
-Red: #ED6767
+Red: #EF7474
 Orange: #FFAE2A
 Blue: #3498DB
 
@@ -318,7 +318,7 @@ h1 {
 }
 
 .col-md-12.svar .red {
-  color: #EB686A;
+  color: #EF7474;
 }
 
 .col-md-12.svar .blue {
@@ -334,7 +334,7 @@ h1 {
 }
 
 .red {
-  color: #EB686A!important;
+  color: #EF7474!important;
 }
 
 .col-md-12.svar .green {
@@ -377,7 +377,7 @@ h1 {
 }
 
 .talk.red {
-  color: #EB686A;
+  color: #EF7474;
 }
 
 .talk.blue {
@@ -438,7 +438,7 @@ section.vegan {
 }
 
 .vegStart {
-  background-image: url('images/cows.jpg');
+  background-image: url('images/cow2.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -461,7 +461,7 @@ section.vegan {
 }
 
 .vegDjur {
-  margin-top: 10%;
+  margin-top: 0%;
 }
 
 .djurInfo, .djurInfo p {
@@ -475,7 +475,7 @@ section.vegan {
   align-items: center;
   justify-content: space-around;
   padding: 0 5%;
-  margin-bottom: 5%;
+  margin-bottom: 12%;
   margin-top: 0;
   height: 280px;
   width: 100%;
@@ -507,6 +507,10 @@ span {
   text-align: center;
 }
 
+.storSiffra-and-text.svenskaMinkar {
+  margin-bottom: 2%;
+}
+
 .minkText {
   color: #EB686A!important;
   line-height: 100%;
@@ -527,7 +531,7 @@ section.fairtrade {
 }
 
 .fairStart {
-  background-image: url('images/girlField.jpeg');
+  background-image: url('images/girl.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -582,7 +586,7 @@ section.fairtrade {
 }
 
 .small {
-  display: inline-block;
+  display: inline;
   font-size: 3vh;
 }
 
@@ -653,7 +657,7 @@ section.fairtrade {
   /*height: 85%;*/
   max-height: 200px;
   max-width: 300px;
-  margin-bottom: 8%;
+  margin-bottom: 20%;
 }
 
 .barnBrygga {
@@ -683,7 +687,7 @@ section.fairtrade {
 .barnDiagram {
   display: flex;
   flex-flow: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: auto;
 }
@@ -693,18 +697,18 @@ section.fairtrade {
 }
 
 .stapelLarge {
-  margin-top: 5%;
   display: none;
 }
 
 .stapelSmall {
-  margin-top: 5%;
+  margin-top: 10%;
   height: 350px;
-  width: 231px;
+  width: 260px;
 }
 
 .stapelText {
-  margin-top: 3%;
+  margin-top: 5%;
+  margin-bottom: 10%;
 }
 
 
@@ -715,7 +719,7 @@ section.eko {
 }
 
 .ekoStart {
-  background-image: url('images/smallPlane.jpg');
+  background-image: url('images/cotton.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -750,7 +754,7 @@ section.eko {
 }
 
 .tunnan {
-  height: 240px;
+  height: 255px;
   width: 155px;
 }
 
@@ -808,25 +812,44 @@ section.summary {
   -webkit-transform: translateZ(-1px) scale(2);
 }
 
-.summary p {
-  font-size: 20px;
-  margin: 0 8% 10% 8%;
+
+.textTillTishor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+  margin-top: 5%;
+  -webkit-box-shadow: 5px 7px 9px -5px rgba(0, 0, 0, 0.93);
+  -moz-box-shadow: 5px 7px 9px -5px rgba(0, 0, 0, 0.93);
+  box-shadow: 5px 7px 9px -5px rgba(0, 0, 0, 0.93);
 }
 
+.textTillTishor p {
+  color: #2c3e50;
+  font-size: 2.8vh;
+  padding: 5% 5%;
+  margin-bottom: 0;
+}
+
+.tisshorSummary {
+  display: flex;
+  justify-content: center;
+}
 
 .tisshor {
-  width: 100%;
+  width: 85%;
   display: flex;
   flex-flow: row!important;
   justify-content: space-around;
+  
 }
 
 .priceTag {
   width: 65%;
 }
 .priceTag img {
-  width: 100%;
-  height: 100%;
+  width: 85%;
+  height: 85%;
 }
 
 .logorTish {
@@ -1052,16 +1075,23 @@ input {text-align: center;}
 
 @media only screen and (min-width: 767px) {
 
+  .stapelText {
+    margin-top: 3%;
+    margin-bottom: 0%;
+  }
+
   .mailPart {
     margin-top: 8%;
   }
 
   .barnArbetare {
     text-align: left;
+    padding-bottom: 3%;
   }
 
   .barnArbetare p {
     text-align: left;
+
   }
 
   .djurInfo, .djurInfo p {
@@ -1093,28 +1123,42 @@ input {text-align: center;}
   }
 
   .djurLogosSum {
-    height: 100%;
-    width: 30%;
+    height: 80%;
+    width: 20%;
     margin: 1%;
   }
 
-  .summary p {
-    font-size: 30px;
-    margin: 0 15% 5% 15%;
-  }
 
   .priceTag {
     width: 70%;
   }
 
   .tisshor {
+    margin-top: 2%;
     width: 40%;
     display: flex;
     flex-flow: column!important;
   }
 
+  .textTillTishor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+    -webkit-box-shadow: 5px 7px 9px -5px rgba(0, 0, 0, 0.93);
+    -moz-box-shadow: 5px 7px 9px -5px rgba(0, 0, 0, 0.93);
+    box-shadow: 5px 7px 9px -5px rgba(0, 0, 0, 0.93);
+  }
+
+  .textTillTishor p {
+    color: #2c3e50;
+    font-size: 3.5vh;
+    padding: 2% 15%;
+    margin: 0;
+  }
+
   .logorTish {
-    width: 100%;
+    width: 75%;
     display: flex;
     flex-flow: row;
   }
@@ -1124,7 +1168,7 @@ input {text-align: center;}
   }
 
   .col-md-12.mink {
-    padding: 5% 15% 5% 15%;
+    padding: 2% 15% 2% 15%;
     display: flex;
     flex-flow: row;
     align-items: center;
@@ -1157,13 +1201,16 @@ input {text-align: center;}
   }
 
   .stapelLarge {
+    margin-left: 3%;
+    margin-top: 5%;
     display: block;
-    height: 300px;
+    height: 270px;
     width: auto;
   }
 
   .barnDiagram {
     flex-flow: row-reverse;
+    justify-content: space-between;
     height: auto;
     padding: 2% 5% 5% 5%;
   }
@@ -1175,7 +1222,7 @@ input {text-align: center;}
   .barn2{
     justify-content: space-around;
     align-items: center;
-    padding: 5%;
+    padding: 2%;
     flex-flow: row;
   }
 
@@ -1227,9 +1274,15 @@ input {text-align: center;}
     margin-right: 10%;
   }
 
+  .textTillTunnan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .tunnan {
-    height: 320px;
-    width: 206px;
+    height: 330px;
+    width: 190px;
   }
 
   .shirtsRightText {
