@@ -177,13 +177,13 @@ h1 {
 }*/
 
 #lp-headline {
-  
+
   font-size: 7.5vh;
   transition: 0.5s ease-in;
   opacity: 1;
   z-index: 5;
   font-family: 'Permanent Marker', sans-serif;
-  letter-spacing:0.2em;
+  letter-spacing:0.1em;
 }
 
 /*.logo {
@@ -529,7 +529,7 @@ section.fairtrade {
 }
 
 .fairStart {
-  background-image: url('images/girl.jpg');
+  background-image: url('images/girlFactory.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
