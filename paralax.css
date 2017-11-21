@@ -8,12 +8,14 @@
 Red: #EF7474
 Orange: #FFAE2A
 Blue: #3498DB
-darkBlue: ##2c3e50
+darkBlue: #2c3e50
 
 Black: #1C1C1C
 Grey: #323232
 White: GhostWhite
 Green: #48936B
+#0A0E0F
+yellow: #E9D06F
 */
 
 /*BURGER SHIET*/
@@ -50,9 +52,7 @@ button.hamburger {
   outline: 0;
 }
 
-
 /*SMALL MENU*/
-
 .menuFromBurger {
   padding-top: 10%;
   height: 100vh;
@@ -68,7 +68,7 @@ button.hamburger {
 
 .menuShowOnClick {
   height: 100vh;
-  width: 30%;
+  width: 100%;
   position: fixed;
   right: 0;
   overflow-x: hidden;
@@ -100,11 +100,6 @@ button.hamburger {
   transform: scale(1.2);
 }
 
-.smallHiddenMenu a:hover {
-  color: gold;
-}
-
-
 /*----- GENERAL -----*/
 
 html {
@@ -112,19 +107,15 @@ html {
   overflow: hidden;
 }
 
-*, *::before, *::after {
-  box-sizing: inherit;
-}
+*, *::before, *::after { box-sizing: inherit; }
 
-section {
-  padding: 0;
- }
+section { padding: 0; }
 
 a {
   color: inherit;
 }
 a:hover {
-  color: gold;
+  color: #E9D06F;
   text-decoration: none;
 }
 
@@ -232,7 +223,7 @@ h1 {
   /*position: relative;*/
   background-position: center;
   background-size: cover;
-  background-image: url(images/girl.jpg);
+  background-image: url(images/sewing-machine.jpg);
   transition: 0.1s ease;
   /*top: calc(((100vh - 67.53vw) / 4) * -2);*/
 }
@@ -245,15 +236,17 @@ h1 {
   height: auto;
 }
 
-
 /*--- FRONT SECTION ----*/
-
 .front {
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  background-color: #1C1C1C;
+  background-color: #0A0E0F;
+  background-image:
+    linear-gradient(
+      #0A0E0F, #1C1C1C
+    );
   padding: 10% 5%;
   position: relative;
   height: 100vh;
@@ -267,10 +260,7 @@ h1 {
   text-align: justify;
   font-family: 'Rubik', sans-serif;
 }
-.front-content p{
-  font-family: 'Rubik', sans-serif;
-
-}
+.front-content p { font-family: 'Rubik', sans-serif; }
 
 
 @media only screen and (max-width: 1024px) {
@@ -286,9 +276,7 @@ h1 {
   }
 }
 
-
 /*--- BUBBLE ----*/
-
 .col-md-6.chat {
   display: flex;
   height: 45%;
@@ -336,6 +324,10 @@ h1 {
 
 .red {
   color: #EF7474!important;
+}
+
+.white {
+  color: white;
 }
 
 .darkBlue {
@@ -809,6 +801,21 @@ section.summary {
   width: 100%;
 }
 
+.logoSummaryBot {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.logoSummaryBot img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  margin-top: 3%;
+}
+
 /*.summaryQuestion {
   margin-bottom: 1%;
 }*/
@@ -872,7 +879,7 @@ section.summary {
 }
 
 .djurLogosSum {
-  height: 33%;
+  height: 34%;
   width: 58%;
   margin: 3%;
 }
@@ -922,7 +929,9 @@ section.summary {
   -webkit-box-shadow: 5px 7px 9px -5px rgba(0, 0, 0, 0.93);
   -moz-box-shadow: 5px 7px 9px -5px rgba(0, 0, 0, 0.93);
   box-shadow: 5px 7px 9px -5px rgba(0, 0, 0, 0.93);
+  border: none;
 }
+
 
 .mailPart {
   margin-top: 15%;
@@ -957,30 +966,28 @@ section.summary {
   -webkit-box-shadow: 5px 7px 9px -5px rgba(0, 0, 0, 0.93);
   -moz-box-shadow: 5px 7px 9px -5px rgba(0, 0, 0, 0.93);
   box-shadow: 5px 7px 9px -5px rgba(0, 0, 0, 0.93);
+  border: none;
 }
 
 
 /*--- PAGE BOTTOM SECTION ----*/
 
 /*används denna?!*/
-.bottomBlack {
-  background-color: black;
-}
+.bottomBlack { background-color: black; }
 
 .page-bottom {
   background-color: #1C1C1C;
   font-family: 'Rubik', sans-serif;
 }
 
-.page-bottom p, h6 {
+.page-bottom p{
   font-family: 'Rubik', sans-serif;
+  font-size: 2.3vh;
 }
 
-.page-bottom {
-  background-color: #1C1C1C;
-}
+.page-bottom { background-color: #1C1C1C; }
 
-.thrive-name {letter-spacing: 0.3em;}
+.thrive-name { letter-spacing: 0.3em; }
 
 .bottom-divider {
   color: #323232;
@@ -1014,7 +1021,7 @@ section.summary {
   flex-flow: column;
 }*/
 
-input {text-align: center;}
+/*input {text-align: center;}*/
 
 /*
 .mail {
@@ -1037,7 +1044,7 @@ input {text-align: center;}
 
 @media only screen and (max-width: 576px) {
   .back {
-    background-image: url(images/girlSmall.png);
+    background-image: url(images/sewing-machine_mobile.jpg);
     /*top: calc(((100vh - 67.53vw) / 4) * -2);*/
   }
   #lp-headline {
@@ -1046,10 +1053,6 @@ input {text-align: center;}
   }
   p {
     font-size: 3vh;
-  }
-
-  .menuShowOnClick {
-    width: 100%;
   }
 
   .sektHeading {
@@ -1084,6 +1087,19 @@ input {text-align: center;}
 }
 
 @media only screen and (min-width: 767px) {
+
+  .menuShowOnClick {
+    width: 30%;
+  }
+
+  .logoSummaryBot img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .logoSummaryBot p {
+    margin-bottom: 8%;
+  }
 
   .bangladesh {
     padding-left: 5%;
@@ -1141,7 +1157,7 @@ input {text-align: center;}
   }
 
   .djurLogosSum {
-    height: 80%;
+    height: 87%;
     width: 20%;
     margin: 1%;
   }
