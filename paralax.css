@@ -177,7 +177,7 @@ h1 {
 }*/
 
 #lp-headline {
-  position: absolute;
+  
   font-size: 7.5vh;
   transition: 0.5s ease-in;
   opacity: 1;
