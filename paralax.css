@@ -204,6 +204,8 @@ h1 {
   z-index: 10;
   top: 30px;
   left: 20px;
+  height: 50px;
+  width: 225px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -539,7 +541,7 @@ section.fairtrade {
 }
 
 .fairStart {
-  background-image: url('images/girlFactory.jpg');
+  background-image: url('images/girl.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
