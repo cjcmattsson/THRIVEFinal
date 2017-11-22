@@ -149,7 +149,7 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 80vw;
   text-align: center;
   color: GhostWhite;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
 }
 
 h1 {
@@ -197,6 +197,18 @@ h1 {
   z-index: 5;
   font-family: 'Permanent Marker', sans-serif;
   letter-spacing:0.1em;
+}
+
+.thriveStart {
+  position: absolute;
+  z-index: 10;
+  top: 30px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  margin-bottom: 0;
 }
 
 /*.logo {
@@ -413,6 +425,7 @@ h1 {
 }
 
 .sektionsBrygga img {
+  display: inline;
   height: 100px;
   width: 100px;
   position: relative;
@@ -516,6 +529,19 @@ span {
 section.fairtrade {
   height: auto;
 }
+<<<<<<< HEAD
+=======
+
+.fairStart {
+  background-image: url('images/girl.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  transform: translateZ(-1px) scale(2);
+  -webkit-transform: translateZ(-1px) scale(2);
+}
+
+>>>>>>> 2c50c4546f3ee3415361451eac83ba2397aae4a7
 .fairtrade {
   background-color: #3498DB;
   display: flex;
@@ -789,7 +815,7 @@ section.fairtrade {
 }
 
 .summaryStart {
-  background-image: url('images/girl.jpg');
+  background-image: url('images/lite1.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
