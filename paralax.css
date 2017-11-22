@@ -47,7 +47,6 @@ button.hamburger {
   display: none;
 }
 
-
 .hamburger:focus {
   outline: 0;
 }
@@ -111,9 +110,8 @@ html {
 
 section { padding: 0; }
 
-a {
-  color: inherit;
-}
+a { color: inherit; }
+
 a:hover {
   color: #E9D06F;
   text-decoration: none;
@@ -164,10 +162,8 @@ h1 {
   font-size: 80px;
   text-align: center;
   letter-spacing: 0.1em;
-
   font-family: 'Permanent Marker', sans-serif;
   text-shadow: 0px 2px 8px rgba(71, 71, 71, 0.61);
-
 }
 
 .textBackStart {
@@ -179,18 +175,7 @@ h1 {
   transition: 1s ease-in;
 }
 
-/*.darkness {
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-  width: 100vw;
-  background-color: black;
-  opacity: 0.5;
-  z-index: 1
-}*/
-
 #lp-headline {
-
   font-size: 7.5vh;
   transition: 0.5s ease-in;
   opacity: 1;
@@ -210,21 +195,6 @@ h1 {
   color: white;
   margin-bottom: 0;
 }
-
-/*.logo {
-  width: 70px;
-  height: 70px;
-}*/
-
-/* Sticky top logo*/
-/*.logo {
-  width: 70px;
-  height: 70px;
-  position: fixed;
-  z-index: 10;
-  top: 15px;
-  left: 15px;
-}*/
 
 .wrapper {
   height: 100vh;
@@ -489,13 +459,6 @@ section.vegan {
   width: 50%;
 }
 
-.largeNumb {
-  height: auto;
-  color: white;
-  font-size: 144px;
-  font-weight: bold;
-}
-
 span {
   height: auto;
 }
@@ -613,32 +576,6 @@ section.fairtrade {
   font-size: 144px;
   font-weight: bold;
   height: 144px;
-}
-
-.barnText {
-  display: flex;
-  justify-content: center;
-  flex-flow: column;
-  align-items: center;
-  height: 144px;
-  color: white!important;
-}
-
-.barnText2 {
-  margin-top: 10%;
-  margin-bottom: 10%;
-  max-height: inherit;
-  display: flex;
-  justify-content: space-between;
-  flex-flow: column;
-  align-items: center;
-  height: auto;
-  line-height: 150%;
-  color: white!important;
-}
-
-.barnText2 span {
-  margin-bottom: 3%;
 }
 
 .barn2{
@@ -897,7 +834,7 @@ section.fairtrade {
 }
 
 
-.largeShareButton, .mailPart button {
+.shareButtonBig, .shareButtonSmall button {
   background-color: #fff;
   color: #583C61;
   font-family: 'Rubik', sans-serif;
@@ -906,21 +843,21 @@ section.fairtrade {
   border-radius: 40px;
 }
 
-.largeShareButton {
+.shareButtonBig {
   font-size: 40px;
   width: 310px;
   height: 80px;
   margin-top: 5%;
 }
 
-.mailPart button {
+.shareButtonSmall button {
   font-size: 15px;
   width: 120px;
   height: 60px;
 }
 
 
-.mailPart {
+.shareButtonSmall {
   margin-top: 15%;
   display: flex;
   justify-content: flex-start;
@@ -1078,7 +1015,7 @@ section.fairtrade {
     margin-bottom: 0%;
   }
 
-  .mailPart {
+  .shareButtonSmall {
     margin-top: 8%;
   }
 
@@ -1097,22 +1034,6 @@ section.fairtrade {
 
   .small {
     font-size: 4vh;
-  }
-
-  .barnText {
-    height: 144px;
-  }
-
-  .barnText2 {
-    margin-top: 3%;
-    justify-content: center;
-    flex-flow: column;
-    align-items: flex-start;
-    height: auto;
-    text-align: left;
-    margin-bottom: 0;
-    line-height: 110%;
-    color: white!important;
   }
 
   .djurLogosSum {
