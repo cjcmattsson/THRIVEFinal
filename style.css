@@ -822,12 +822,13 @@ button.hamburger {
   font-family: 'Rubik', sans-serif;
   font-weight: bold;
   border: none;
+  transition: all 0.2s ease;
 }
 
 .shareButtonBig:hover, .shareButtonSmall button:hover {
   background-color: #e1dbe2;
-  /*-webkit-box-shadow: 5px 7px 9px -5px rgba(0, 0, 0, 0.93);
-  -moz-box-shadow: 5px 7px 9px -5px rgba(0, 0, 0, 0.93);*/
+  -webkit-box-shadow: 3px 5px 7px -5px rgba(0, 0, 0, 0.93);
+  -moz-box-shadow: 3px 5px 7px -5px rgba(0, 0, 0, 0.93);
   box-shadow: 3px 5px 7px -5px rgba(0, 0, 0, 0.93);
 }
 
