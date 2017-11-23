@@ -420,6 +420,7 @@ button.hamburger {
 
 .vegan {
   background-color: #EB686A;
+  background-image: url('textRektangel.svg');
   display: flex;
   flex-flow: column;
   justify-content: space-between;
@@ -502,6 +503,7 @@ button.hamburger {
 
 .fairtrade {
   background-color: #3498DB;
+  background-image: url('textRektangel.svg');
   display: flex;
   flex-flow: column;
   justify-content: space-between;
@@ -524,11 +526,9 @@ button.hamburger {
 .barn {
   height: auto;
   background-color: #3498DB;
+  background-image: url('textRektangel.svg');
 }
 
-.barn {
-  height: auto;
-}
 
 .storSiffra-and-text {
   display: flex;
@@ -585,6 +585,7 @@ button.hamburger {
   align-items: center;
   height: auto;
   background-color: #3498DB;
+  background-image: url('textRektangel.svg');
 }
 
 .gubbar {
@@ -658,6 +659,7 @@ button.hamburger {
 .eko {
   height: auto;
   background-color: #48936B;
+  background-image: url('textRektangel.svg');
   display: flex;
   flex-flow: column;
   justify-content: space-between;
@@ -727,6 +729,7 @@ button.hamburger {
 .summary {
   height: auto;
   background-color: #2c3e50;
+  background-image: url('textRektangel.svg');
   width: 100%;
 }
 
@@ -797,6 +800,7 @@ button.hamburger {
 .cta {
   height: auto;
   background-color: #583C61;
+  background-image: url('textRektangel.svg');
   display: flex;
   flex-flow: column;
   justify-content: space-between;
@@ -818,7 +822,13 @@ button.hamburger {
   font-family: 'Rubik', sans-serif;
   font-weight: bold;
   border: none;
-  border-radius: 40px;
+}
+
+.shareButtonBig:hover, .shareButtonSmall button:hover {
+  background-color: #e1dbe2;
+  /*-webkit-box-shadow: 5px 7px 9px -5px rgba(0, 0, 0, 0.93);
+  -moz-box-shadow: 5px 7px 9px -5px rgba(0, 0, 0, 0.93);*/
+  box-shadow: 3px 5px 7px -5px rgba(0, 0, 0, 0.93);
 }
 
 .shareButtonBig {
@@ -826,12 +836,14 @@ button.hamburger {
   width: 310px;
   height: 80px;
   margin-top: 5%;
+  border-radius: 30px;
 }
 
 .shareButtonSmall button {
-  font-size: 15px;
+  font-size: 20px;
   width: 120px;
   height: 60px;
+  border-radius: 25px;
 }
 
 .shareButtonSmall {
