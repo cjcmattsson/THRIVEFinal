@@ -9,11 +9,11 @@ Orange: #FFAE2A
 Blue: #3498DB
 darkBlue: #2c3e50
 
-Black: #1C1C1C
+Black 1: #1C1C1C
+Black 2: #0A0E0F
 Grey: #323232
 White: GhostWhite
 Green: #48936B
-#0A0E0F
 yellow: #E9D06F
 */
 
@@ -149,14 +149,6 @@ h1 {
   margin-bottom: 0;
 }
 
-.col-md-12.svar .red {
-  color: #EF7474;
-}
-
-.col-md-12.svar .blue {
-  color: #4E92DF;
-}
-
 .blue {
   color: #4E92DF!important;
 }
@@ -176,10 +168,10 @@ h1 {
 .darkBlue {
   color: #2c3e50!important;
 }
-
+/*
 .col-md-12.svar .green {
   color: #48936B;
-}
+}*/
 
 
 /*--- STARTSIDOR FRONT/BACK SECTION ----*/
@@ -215,12 +207,8 @@ h1 {
   font-family: 'Rubik', sans-serif;
 }
 
-.front-content p {
-  font-family: 'Rubik', sans-serif;
-}
 
-
-/*BURGARMENY*/
+/*HAMBURGER MENU*/
 
 button.hamburger {
   width: 70px;
@@ -362,22 +350,18 @@ button.hamburger {
   font-size: 20px;
 }
 
-.talk.red {
-  color: #EF7474;
-}
-
 .talk.blue {
   color: #3498DB;
 }
 
-.talk.green {
+/*.talk.green {
   color: #48936B;
-}
+}*/
 
 
 /*BILDER/BRYGGOR MELLAN SECTIONS*/
 
-.sektionsBrygga {
+.sectionBridge {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -388,7 +372,7 @@ button.hamburger {
   padding: 0!important;
 }
 
-.sektionsBrygga h2 {
+.sectionBridge h2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -397,7 +381,7 @@ button.hamburger {
   font-weight: bold;
 }
 
-.sektionsBrygga img {
+.sectionBridge img {
   display: inline;
   height: 100px;
   width: 100px;
@@ -484,7 +468,7 @@ button.hamburger {
   text-align: right!important;
 }
 
-.minkBild1 {
+.minkImg1 {
   height: 160px;
   width: 50%;
 }
@@ -823,6 +807,7 @@ button.hamburger {
   font-weight: bold;
   border: none;
   transition: all 0.2s ease;
+  cursor: pointer;
 }
 
 .shareButtonBig:hover, .shareButtonSmall button:hover {
@@ -830,6 +815,10 @@ button.hamburger {
   -webkit-box-shadow: 3px 5px 7px -5px rgba(0, 0, 0, 0.93);
   -moz-box-shadow: 3px 5px 7px -5px rgba(0, 0, 0, 0.93);
   box-shadow: 3px 5px 7px -5px rgba(0, 0, 0, 0.93);
+}
+
+.shareButtonBig:focus, .shareButtonSmall button:focus {
+  outline: 0;
 }
 
 .shareButtonBig {
@@ -986,7 +975,7 @@ button.hamburger {
   .djurInfo, .djurInfo p {
     text-align: right;
   }
-  .minkBild1 {
+  .minkImg1 {
     transform: scaleX(-1);
   }
   .col-md-12.mink {
@@ -1147,7 +1136,6 @@ button.hamburger {
   .logoSummaryBot p {
     margin-bottom: 8%;
   }
-  /*End of code*/
 }
 
 @media only screen and (min-width: 900px) {
@@ -1169,3 +1157,5 @@ button.hamburger {
     font-size: 65px;
   }
 }
+
+/*End of code*/
