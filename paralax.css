@@ -440,7 +440,7 @@ section.vegan {
 }
 
 .djurInfo, .djurInfo p {
-  text-align: left;
+  text-align: center;
 }
 
 .col-md-8.squareAnimals {
@@ -466,6 +466,10 @@ span {
 }
 
 .col-md-12.mink {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
   height: auto;
   padding: 0 5% 5% 5%;
   background-color: #f7f7f7;
@@ -559,13 +563,13 @@ section.fairtrade {
   flex-flow: column;
   justify-content: flex-start;
   align-items: flex-start;
-  text-align: left;
+  text-align: center;
   height: auto;
   margin-bottom: 0;
 }
 
 .bangladesh p {
-  text-align: left;
+  text-align: center;
 }
 
 .storSiffra {
@@ -667,16 +671,15 @@ section.fairtrade {
   width: 100%;
 }
 
-.threeSixFive p {
-  text-align: left;
+.threeSixFive {
+  text-align: center;
 }
 
 .barrel {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   margin-bottom: 10%;
-  margin-right: 10%;
 }
 
 .tunnan {
@@ -990,6 +993,10 @@ section.fairtrade {
 }
 
 @media only screen and (min-width: 767px) {
+
+  .bangladesh {
+    text-align: left;
+  }
 
   p {
     font-size: 4vh;
